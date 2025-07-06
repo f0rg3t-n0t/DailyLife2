@@ -365,26 +365,7 @@
     <p><span style="font-weight: bold;">[로비]/[카운터]<br>[공증인]</span><br><br><em>"기록체는 고인의 기억이나 성격을 기반으로 새로운 아웃풋을 도출하기도 합니다.<br>실로 놀라운 기술이지요. 여러분께 선보일 수 있어 영광입니다."</em></p>
     <button class="nav-button" onclick="goTo('notary')">다른 이야기</button>
  </div>
-  
-    <!-- 로비:카운터:notary3 --> 
-    <div id="notary3" class="hidden">
-    <p><span style="font-weight: bold;">[로비]/[카운터]<br>[공증인]</span><br><br><em>"저는 로렘 님의 유언을 절차대로 집행하기 위해 만들어진 공증인 AI입니다. <br>이곳에 머무르시는 여러분의 편의를 위해 안내와 통번역을 포함한 다양한 역할도 함께 수행하고 있습니다. <br>섬 어디서든 말을 걸어 주시면 응답하겠습니다."</em></p>
-    <button id="nota3-1" onclick="goTodel('notary3-1', 'nota3-1')">AI보다는 사람이 좋다고 항의한다</button>
-    <button id="nota3-2" onclick="goTodel('notary3-2', 'nota3-2')">잘 부탁한다고 인사한다</button><br>
- </div>
-  
-    <!-- 로비:카운터:notary3-1 --> 
-    <div id="notary3-1" class="hidden">
-    <p><span style="font-weight: bold;">[로비]/[카운터]<br>[공증인]</span><br><br><em>"그렇군요… 희망에 부응할 수 없어 유감입니다."</em><br><br>공증인은 풀이 죽은 것 같다.</p>
-    <button class="nav-button" onclick="goTo('notary')">다른 이야기</button>
- </div>
-  
-    <!-- 로비:카운터:notary3-2 --> 
-    <div id="notary3-2" class="hidden">
-    <p><span style="font-weight: bold;">[로비]/[카운터]<br>[공증인]</span><br><br><em>"네, 잘 부탁드립니다. 초세계급 여러분의 편의를 위해 최선을 다하겠습니다."</em><br><br>공증인과 인사를 하자, 어느새 카운터 위에 반짝이는 코인이 하나 올라와 있다. 이건 선물일까?<br><span style="font-weight: bold;">1코인을 획득했다.</span></p>
-    <button class="nav-button" onclick="goTo('notary')">다른 이야기</button>
- </div>
-  
+
       <!-- 로비:카운터:notary4 --> 
     <div id="notary4" class="hidden">
     <p><span style="font-weight: bold;">[로비]/[카운터]<br>[공증인]</span><br><br><em>"그럼 문제입니다. 미래기관 대출 순위 1위 도서의 제목을 알고 계신가요?"</em><br><br>정확한 제목을 입력하자.</p>
@@ -465,8 +446,8 @@
 
     <!-- 음악실 --> 
     <div id="music" class="hidden">
-    <p><span style="font-weight: bold;">[음악실]</span><br><br>다양한 악기와 음반을 모아 둔 음악실.<br>방음 시설이 완비된 <span style="color: #3f40d3;">녹음 부스</span>와 <span style="color: #3f40d3;">CD 감상 부스</span>가 설치되어 있다.<br>또, <span style="color: #3f40d3;">악기 보관실</span>이라고 쓰인 작은 문이 구석에 배치된 것이 보인다.</p>
-    <button onclick="goTo('recording')">녹음 부스</button>
+    <p><span style="font-weight: bold;">[음악실]</span><br><br>다양한 악기와 음반을 모아 둔 음악실.<br>방음 시설이 완비된 <span style="color: #3f40d3;">녹음실</span>와 <span style="color: #3f40d3;">CD 감상 부스</span>가 설치되어 있다.<br>또, <span style="color: #3f40d3;">악기 보관실</span>이라고 쓰인 작은 문이 구석에 배치된 것이 보인다.</p>
+    <button onclick="goTo('recording')">녹음실</button>
     <button onclick="goTo('cd')">CD 감상 부스</button>
     <button onclick="goTo('inst')">악기 보관실</button><br>
     <button class="nav-button" onclick="goTo('3rdfloor')">나가기</button>
@@ -474,44 +455,61 @@
 
     <!-- 녹음 부스 --> 
     <div id="recording" class="hidden">
-    <p><span style="font-weight: bold;">[녹음실]</span><br><br>이곳에서라면 누구나 스타가 될 수 있다!<br>노래 실력을 뽐낼 수 있는 마이크와 헤드셋이 구비된 녹음 부스.</p>
+    <p><span style="font-weight: bold;">[음악실]/[녹음실]</span><br><br>이곳에서라면 누구나 스타가 될 수 있다!<br>노래 실력을 뽐낼 수 있는 마이크와 헤드셋이 구비된 녹음 부스.</p>
     <button onclick="goTo('recording1')">노래한다</button><br>
     <button class="nav-button" onclick="goTo('music')">나가기</button>
   </div>
 
-
     <!-- 녹음 부스 --> 
     <div id="recording1" class="hidden">
-    <p><span style="font-weight: bold;">[녹음실]</span><br><br>어떤 곡에 맞춰서 노래를 부를까?</p>
+    <p><span style="font-weight: bold;">[음악실]/[녹음실]</span><br><br>어떤 곡에 맞춰서 노래를 부를까?</p>
     <button onclick="goTo('recording2')">잔잔한 발라드</button><br>
     <button onclick="goTo('recording3')">신나는 댄스곡</button><br>
   </div>
 
     <!-- 녹음 부스 --> 
     <div id="recording2" class="hidden">
-    <p><span style="font-weight: bold;">[녹음실]</span><br><br>어떤 마음가짐으로 노래를 부를까?</p>
+    <p><span style="font-weight: bold;">[음악실]/[녹음실]</span><br><br>어떤 마음가짐으로 노래를 부를까?</p>
     <button onclick="goTo('recording4')">나만의 그루브를 담아서</button><br>
     <button onclick="goTo('recording5')">음 하나하나에 심혈을 기울여서</button><br>
   </div>
 
     <!-- 녹음 부스 --> 
     <div id="recording3" class="hidden">
-    <p><span style="font-weight: bold;">[녹음실]</span><br><br>어떤 마음가짐으로 노래를 부를까?</p>
+    <p><span style="font-weight: bold;">[음악실]/[녹음실]</span><br><br>어떤 마음가짐으로 노래를 부를까?</p>
     <button onclick="goTo('recording4')">나만의 그루브를 담아서</button><br>
     <button onclick="goTo('recording5')">음 하나하나에 심혈을 기울여서</button><br>
   </div>
 
     <!-- 녹음 부스 --> 
     <div id="recording4" class="hidden">
-    <p><span style="font-weight: bold;">[녹음실]</span><br><br>그루비하게 열창했다! 점수는...<span id="recording-score"></span></p>
+    <p><span style="font-weight: bold;">[음악실]/[녹음실]</span><br><br>그루비하게 열창했다! 점수는...<span id="recording-score"></span><br>열심히 노래하고 나니 허공에서 1코인이 떨어졌다. 감상료인가...?<br><br><span style="font-weight: bold;">1코인을 획득했다.</span></p>
     <button class="nav-button" onclick="goTo('music')">나가기</button>
   </div>
 
     <!-- 녹음 부스 --> 
     <div id="recording5" class="hidden">
-    <p><span style="font-weight: bold;">[녹음실]</span><br><br>섬세하게 열창했다! 점수는...<span id="recording-score"></span></p>
+    <p><span style="font-weight: bold;">[음악실]/[녹음실]</span><br><br>섬세하게 열창했다! 점수는...<span id="recording-score"></span><br>열심히 노래하고 나니 허공에서 1코인이 떨어졌다. 감상료인가...?<br><br><span style="font-weight: bold;">1코인을 획득했다.</span></p>
     <button class="nav-button" onclick="goTo('music')">나가기</button>
   </div>
+
+    <!-- CD부스 --> 
+    <div id="cd" class="hidden">
+    <p><span style="font-weight: bold;">[음악실]/[CD 감상 부스]</span><br><br>좋아하는 노래를 감상할 수 있는 부스.<br>꽤 고급인 듯한 <span style="color: #3f40d3;">CD 플레이어</span>가 눈에 띈다. 헤드셋도 부착되어 있다.<br>벽 한켠에는 CD를 모아 놓은 <span style="color: #3f40d3;">장식장</span>이 보인다.</p>
+    <button onclick="goTo('cdplayer')">CD 플레이어</button>
+    <button onclick="goTo('cdlist')">장식장</button><br>
+    <button class="nav-button" onclick="goTo('music')">나가기</button>
+  </div>
+
+    <!-- CD부스 --> 
+    <div id="cdplayer" class="hidden">
+    <p><span style="font-weight: bold;">[음악실]/[CD 감상 부스]</span><br><br>원하는 CD를 플레이어에 넣고 감상할 수 있는 공간이다. 어떤 음악을 들어 볼까?</p>
+    <button onclick="goTo('cdplayer')">CD를 재생한다</button>
+    <button class="nav-button" onclick="goTo('music')">나가기</button>
+  </div>
+
+
+
   
     <!-- 영화관 --> 
     <div id="cinema" class="hidden">
@@ -548,234 +546,6 @@
     <p><span style="font-weight: bold;">[자유연구실]</span><br><br></p>
     <button class="nav-button" onclick="goTo('3rdfloor')">나가기</button>
     </div>   
-
-    <!-- 메모리얼 파크 --> 
-    <div id="memorial" class="hidden">
-    <p><span style="font-weight: bold;">[메모리얼 파크 입구]</span><br><br>흰 울타리로 둘러싸여 구획지어진 공간이 바다와 접하고 있다.<br>조금은 엄숙한 기분이 들지도...<br><br>
-    <span style="color: #737373;">'메모리얼 파크에 입장한다' 버튼 클릭 시 효과음이 재생됩니다.</span></p>
-    <button onclick="goToWithSoundNL('memorial1', 'zzapsea.mp3')">메모리얼 파크에 입장한다</button><br>
-    <button class="nav-button" onclick="goTo('outside')">나가기</button>
-  </div>
-
-      <!-- 메모리얼 파크:1 --> 
-    <div id="memorial1" class="hidden">
-    <p><span style="font-weight: bold;">[메모리얼 파크]</span><br><br>짧게 깎인 잔디 위로 새하얀 비석이 햇빛을 반사하며 눈길을 끈다.<br>이곳은 세상을 떠난 초세계급을 기리는 메모리얼 파크. 묻힌 사람은 아직 하나뿐이다.<br>규칙적으로 들려오는 파도 소리가 장송곡처럼 잔잔히 흐른다.<br>메모리얼 파크를 가로지르는 길은 꽃이 만발한 <span style="color: #3f40d3;">화원</span>으로 이어진다.</p>
-    <button onclick="goTo('memorial-lorem')">로렘의 묘비</button>
-    <button onclick="goTo('garden')">화원</button><br>
-    <button class="nav-button" onclick="goToWithoutzzapsea('memorial')">나가기</button>
-  </div>
-
-      <!-- !!메모리얼 파크:화원 --> 
-    <div id="garden" class="hidden">
-    <p><span style="font-weight: bold;">[메모리얼 파크]<br>[화원]</span><br><br>오색의 꽃이 화려하게 피어난 화원. 장미 덤불이 시야를 가릴 정도의 높이로 다듬어져 있어 마치 미로를 연상케 한다.<br>한켠에는 <span style="color: #3f40d3;">헌화용 꽃</span>을 자유롭게 가져갈 수 있는 공간이 있다. 하나 골라 보는 것도 좋겠지...<br>화원 안쪽에는 공중전화 박스를 닮은 작은 <span style="color: #3f40d3;">부스</span>가 설치되어 있다.</p>
-    <button id="flowerpick" onclick="goTodel('gardenflower', 'flowerpick')">헌화용 꽃을 고른다</button>
-    <button onclick="goTo('fltest0')">부스</button><br>
-    <button class="nav-button" onclick="goTo('memorial1')">나가기</button>
-  </div>
-
-      <!-- !!메모리얼 파크:부스0 --> 
-    <div id="fltest0" class="hidden">
-    <p><span style="font-weight: bold;">[메모리얼 파크]/[화원]<br>[부스]</span><br><br>부스 안쪽으로 들어가 보면, 공중전화를 닮은 전화기가 놓여 있다. 정말 공중전화 박스였던 걸까?<br>하지만 전화기는 무척 구식이고, 숫자 버튼도 눌리지 않는다.<br>전화기 아래에 작게 안내문이 쓰여 있다.<br><br><em>'당신에게 맞는 꽃을 추천해 드립니다. 수화기를 들어 질문에 응답해 주세요.'</em></p>
-    <button id="flt" onclick="goTodel('fltest1', 'flt')">수화기를 든다</button><br>
-    <button class="nav-button" onclick="goTo('garden')">나가기</button>
-  </div>
-
-      <!-- !!메모리얼 파크:부스1 --> 
-    <div id="fltest1" class="hidden">
-    <p><span style="font-weight: bold;">[메모리얼 파크]/[화원]<br>[부스]</span><br><br>수화기 저편에서 목소리가 들려온다. 질문에 답하면 되는 것 같은데...<br><br><em>"취향을 모르는 상대에게 선물을 줄 때에는, 내가 받는다면 기쁠 만한 것을 선물하나요?<br>아니면 호불호가 갈리지 않아 누구나 좋아할 만한 것을 선물하나요?"</em></p>
-    <button onclick="goTo('fltest2')">내가 받는다면 기쁠 만한 것</button><br>
-    <button onclick="goTo('fltest3')">호불호 없이 누구나 좋아할 만한 것</button><br>
-  </div>
-
-      <!-- !!메모리얼 파크:부스2 --> 
-    <div id="fltest2" class="hidden">
-    <p><span style="font-weight: bold;">[메모리얼 파크]/[화원]<br>[부스]</span><br><br><em>"어떻게 해도 꺾을 수 없는 상대를 만난다면, 좋은 라이벌을 만나 기쁘다는 생각이 드나요?<br>아니면 솔직히 조금은 무력감을 느끼나요?"</em></p>
-    <button onclick="goTo('fltest4')">기쁘다는 생각이 들 것 같다</button><br>
-    <button onclick="goTo('fltest5')">조금은 무력감이 들 것 같다</button><br>
-  </div>
-
-        <!-- !!메모리얼 파크:부스3 --> 
-    <div id="fltest3" class="hidden">
-    <p><span style="font-weight: bold;">[메모리얼 파크]/[화원]<br>[부스]</span><br><br><em>"새로 만나는 사람을 상대로는 먼저 자기소개를 하는 편인가요?<br>아니면 상대가 자기소개를 할 때까지 기다리나요?"</em></p>
-    <button onclick="goTo('fltest4')">먼저 자기소개를 한다</button><br>
-    <button onclick="goTo('fltest5')">상대가 자기소개를 할 때까지 기다린다</button><br>
-  </div>
-
-        <!-- !!메모리얼 파크:부스4 --> 
-    <div id="fltest4" class="hidden">
-    <p><span style="font-weight: bold;">[메모리얼 파크]/[화원]<br>[부스]</span><br><br><em>"행운이 당신의 편에 있다고 믿나요?"</em></p>
-    <button onclick="goTo('fltest6')">그렇다</button><br>
-    <button onclick="goTo('fltest7')">아니다</button><br>
-  </div>
-  
-        <!-- !!메모리얼 파크:부스5 --> 
-    <div id="fltest5" class="hidden">
-    <p><span style="font-weight: bold;">[메모리얼 파크]/[화원]<br>[부스]</span><br><br><em>"이름도, 얼굴도 모르는 상대와 사랑에 빠질 수 있다고 생각하나요?"</em></p>
-    <button onclick="goTo('fltest7')">그렇다</button><br>
-    <button onclick="goTo('fltest8')">아니다</button><br>
-  </div>
-
-        <!-- !!메모리얼 파크:부스6 --> 
-    <div id="fltest6" class="hidden">
-    <p><span style="font-weight: bold;">[메모리얼 파크]/[화원]<br>[부스]</span><br><br>목소리가 끊기더니, 전화기 아래쪽에서 종이 한 장이 팔랑 떨어졌다. 꽃이 압화된 엽서 한 장이다.<br><br><em>'열정과 의지를 갖춘 당신에게 어울리는 꽃, 아데니움.<br>꽃말은 '무모한 사랑, 열정'.<br>과감한 결단이 필요할 때 이 꽃이 행운의 증표가 되어 줄 것입니다.'</em><br>...라는 글이 새겨져 있다.</p>
-    <button class="nav-button" onclick="goTo('garden')">나가기</button>
-  </div>
-
-          <!-- !!메모리얼 파크:부스7 --> 
-    <div id="fltest7" class="hidden">
-    <p><span style="font-weight: bold;">[메모리얼 파크]/[화원]<br>[부스]</span><br><br>목소리가 끊기더니, 전화기 아래쪽에서 종이 한 장이 팔랑 떨어졌다. 꽃이 압화된 엽서 한 장이다.<br><br><em>'성장의 여지와 잠재력을 품은 당신에게 어울리는 꽃, 능소화.<br>꽃말은 '기다림, 명예, 영광, 그리움'.<br>앞으로 한 발을 내딛고자 할 때 이 꽃이 행운의 증표가 되어 줄 것입니다.'</em><br>...라는 글이 새겨져 있다.</p>
-    <button class="nav-button" onclick="goTo('garden')">나가기</button>
-  </div>
-
-          <!-- !!메모리얼 파크:부스8 --> 
-    <div id="fltest8" class="hidden">
-    <p><span style="font-weight: bold;">[메모리얼 파크]/[화원]<br>[부스]</span><br><br>목소리가 끊기더니, 전화기 아래쪽에서 종이 한 장이 팔랑 떨어졌다. 꽃이 압화된 엽서 한 장이다.<br><br><em>'오묘한 매력을 가지고 있는 당신에게 어울리는 꽃, 거베라.<br>꽃말은 '풀 수 없는 수수께끼, 신비'.<br>진정한 자신을 내보이고 싶을 때 이 꽃이 행운의 증표가 되어 줄 것입니다.'</em><br>...라는 글이 새겨져 있다.</p>
-    <button class="nav-button" onclick="goTo('garden')">나가기</button>
-  </div>
-
-          <!-- !!메모리얼 파크:부스9 --> 
-    <div id="fltest9" class="hidden">
-    <p><span style="font-weight: bold;">[메모리얼 파크]/[화원]<br>[부스]</span><br><br>목소리가 끊기더니, 전화기 아래쪽에서 종이 한 장이 팔랑 떨어졌다. 꽃이 압화된 엽서 한 장이다.<br><br><em>'신중하고 섬세한 당신에게 어울리는 꽃, 라벤더.<br>꽃말은 '침묵, 행복이 다시 온다'.<br>스스로에게 믿음이 필요할 때 이 꽃이 행운의 증표가 되어 줄 것입니다.'</em><br>...라는 글이 새겨져 있다.</p>
-   <button class="nav-button" onclick="goTo('garden')">나가기</button>
-  </div>
-  
-      <!-- !!메모리얼 파크:화원:꽃 --> 
-    <div id="gardenflower" class="hidden">
-    <p><span style="font-weight: bold;">[화원]</span><br><br>마음에 드는 꽃을 고르자.</p>
-    <button onclick="goTo('flowerobtain')">수국</button><br>
-    <button onclick="goTo('flowerobtain')">장미</button><br>
-    <button onclick="goTo('flowerobtain')">국화</button><br>
-  </div>
-
-      <!-- !!메모리얼 파크:화원:꽃 --> 
-    <div id="flowerobtain" class="hidden">
-    <p><span style="font-weight: bold;">[화원]</span><br><br>정성을 들여 꽃을 골랐다. 이 정도면 괜찮으려나...</p>
-    <button class="nav-button" onclick="goTo('garden')">나가기</button>
-  </div>
-
-      <!-- !!메모리얼 파크:로렘의 묘비 --> 
-    <div id="memorial-lorem" class="hidden">
-    <p><span style="font-weight: bold;">[메모리얼 파크]<br>[로렘의 묘비]</span><br><br>1985.06.09-2025.XX.XX</p>
-    <button id="flowerbtn" onclick="giveflower('flowerbtn')">헌화한다</button><br>
-    <button class="nav-button" onclick="goTo('memorial1')">나가기</button>
-  </div>
-
-      <!-- !!메모리얼 파크:로렘의 묘비:헌화 --> 
-    <div id="flowerpage" class="hidden">
-    <p><span style="font-weight: bold;">[메모리얼 파크]<br>[로렘의 묘비]</span><br><br>묘비 앞에 꽃을 가지런히 올려놓았다. 바람에 꽃잎이 살짝 흔들린다.<br>잠시 눈을 감았다 뜨니... 원래 여기 코인이 놓여 있었던가?<br><span style="font-weight: bold;">1코인을 획득했다.</span></p>
-    <button class="nav-button" onclick="goTo('memorial1')">나가기</button>
-  </div>
-
-      <!-- 산책로 --> 
-    <div id="street" class="hidden">
-    <p><span style="font-weight: bold;">[산책로]</span><br><br>섬 뒤쪽을 돌아볼 수 있는 해안산책로. 왕복 30분 정도 소요된다는 안내가 적혀 있다.<br>산책로 입구에는 <span style="color: #3f40d3;">자전거 대여소</span>와 <span style="color: #3f40d3;">작은 벤치</span>가 보인다.</p>
-    <button onclick="goTo('street1')">걸어서 산책하기</button><br>
-    <button onclick="goTo('street2')">자전거 대여소</button>
-    <button onclick="goTo('bench')">작은 벤치</button><br>
-    <button class="nav-button" onclick="goTo('outside')">나가기</button>
-  </div>
-
-    <div id="street1" class="hidden">
-    <p><span style="font-weight: bold;">[산책로]</span><br><br>천천히 걸어서 산책하기로 했다.</p>
-  <button onclick="goTo('street2-2')">계속 걷는다</button>
-  </div>
-  
-      <!-- 산책로-작은 벤치 --> 
-    <div id="bench" class="hidden">
-    <p><span style="font-weight: bold;">[산책로]<br>[작은 벤치]</span><br><br>바다를 향하는 쪽으로 놓인 벤치. 앉아서 쉬기에 딱 좋은 장소다.<br>
-    수평선 끝까지 푸른색이 뻗어나간다. 시야를 가리는 것은 아무것도 없다.<br>
-    이렇게 육지와 동떨어진 곳에 미래기관의 시설이 위치하고 있을 줄은 아무도 몰랐겠지...</p>
-    <button class="nav-button" onclick="goTo('street')">나가기</button>
-  </div>
-
-      <!-- 산책로2:자전거 대여소 --> 
-    <div id="street2" class="hidden">
-    <p><span style="font-weight: bold;">[산책로]<br>[자전거 대여소]</span><br><br>바닷바람과 속도를 즐기고 싶은 사람들을 위한 자전거 대여소.<br>다양한 종류의 자전거가 마련되어 있다.<br>2인승 자전거, 전기 자전거… 외바퀴자전거까지?<br><br>이용료는 무료지만, 한 사용자당 1일 1회 사용 제한이 있는 모양이다.</p>
-    <button id="bikerental" onclick="goTodel('street2-1', 'bikerental')">자전거를 대여한다</button><br>
-    <button class="nav-button" onclick="goTo('street')">나가기</button>
-  </div>
-
-    <!-- 산책로:2-1 (자전거 대여) --> 
-  <div id="street2-1" class="hidden"> <p><span style="font-weight: bold;">[산책로]<br>[자전거 대여소]</span><br><br>어떤 자전거를 빌릴까?</p> 
-  <button onclick="goTo('street2-1-1')">평범한 자전거</button>
-  <button onclick="goTo('street2-1-1')">전기 자전거</button>
-  <button onclick="goTo('street2-1-2')">외바퀴 자전거</button>
-  </div>
-
-  <!-- 산책로:2-1-1 (일반 자전거) --> 
-  <div id="street2-1-1" class="hidden"> 
-  <p><span style="font-weight: bold;">[산책로]</span><br><br>빌린 자전거를 타고 달리자 딱 기분 좋은 바람이 불어온다. 상쾌한 느낌이다.<br>여기 있는 동안 기분 전환을 하고 싶다면 가끔 이렇게 달려보는 것도 좋겠지…</p>
-  <button onclick="goTo('street2-2')">계속 달린다</button>
-  </div>
-
-  <!-- 산책로:2-1-2 (외바퀴 자전거) --> 
-  <div id="street2-1-2" class="hidden"> 
-  <p><span style="font-weight: bold;">[산책로]</span><br><br>기세 좋게 외바퀴 자전거를 고른 것은 좋았지만... 중심 잡기가 쉽지 않다!<br>몇 번 아슬아슬하게 넘어질 뻔한 뒤에야 익숙해졌다. 이거, 꽤 운동이 될 것 같은데...<br><br>적응하고 나니 뺨에 닿는 바람이 제법 상쾌하게 느껴진다.</p>
-  <button onclick="goTo('street2-2')">계속 달린다</button>
-  </div>
-  
-  <!-- 산책로:2-2 소원의 호수 입구 --> 
-  <div id="street2-2" class="hidden"> 
-  <p><span style="font-weight: bold;">[산책로]</span><br><br>어느새 산책로의 끝이다. 눈앞에 보이는 것은 작은 호수인데… 자세히 보니 <span style="color: #3f40d3;">소원의 호수</span>라고 적힌 팻말이 꽂혀 있다.</p>
-  <button onclick="goTo('street3')">소원의 호수</button><br>
-  <button class="nav-button" onclick="goTo('street')">이만 돌아간다</button>
-  </div>
-
-   <!-- 산책로: 3 소원의 호수 --> 
-  <div id="street3" class="hidden"> 
-  <p><span style="font-weight: bold;">[산책로]<br>[소원의 호수]</span><br><br>'간절히 바라는 마음은 형태를 가지게 된다는 말이 있습니다.<br>원하는 것을 소리내서 말하면, 호수에 걸린 마법이 당신의 소원을 이루어 줄지도...'</p>
-  <button id="makeawish" onclick="goTodel('pond', 'makeawish')">소원을 빈다</button><br>
-  <button class="nav-button" onclick="goTo('street2-2')">나가기</button>
-  </div>
-
-  <!-- 소원 빌기 --> 
-  <div id="pond" class="hidden"> 
-  <p><span style="font-weight: bold;">[산책로]<br>[소원의 호수]</span><br><br>어떤 소원을 빌까?</p>
-  <button onclick="goTo('pond-money')">부자가 되고 싶다</button><br>
-  <button onclick="goTo('pond-friend')">인기인이 되고 싶다</button><br>
-  <button onclick="goTo('pond-nota')">공증인의 마음을 가지고 싶다</button><br>
-  </div>
-
-  <!-- 소원 빌기 --> 
-  <div id="pond-money" class="hidden"> 
-  <p><span style="font-weight: bold;">[산책로]<br>[소원의 호수]</span><br><br>"부자가 되고 싶다!"<br>소원을 빌었다...<br><br>어라? 아무것도 없던 하늘에서 갑자기 코인 두 개가 떨어졌다.<br>이 호수, 정말 효험이 있는 걸까...?<br><br><span style="font-weight: bold;">2코인을 획득했다.</span></p>
-  <button class="nav-button" onclick="goTo('street3')">나가기</button>
-  </div>
-
-  <div id="pond-friend" class="hidden"> 
-  <p><span style="font-weight: bold;">[산책로]<br>[소원의 호수]</span><br><br>"인기인이 되고 싶다!"<br>소원을 빌었다...<br><br>어라? 아무것도 없던 하늘에서 갑자기 종이 한 장이 떨어졌다. ...'소원권'?<br><br><span style="font-weight: bold;"> ‘소원권’ 을 획득했다. 선물할 시 상대의 호감도 +2. </span></p>
-  <button class="nav-button" onclick="goTo('street3')">나가기</button>
-  </div>
-
-  <!-- 공증인 공략 -->
-  <div id="pond-nota" class="hidden"> 
-  <p><span style="font-weight: bold;">[산책로]<br>[소원의 호수]</span><br><br>"공증인의 마음을 가지고 싶다!"<br>소원을 빌었다...<br><br><em>"... ... 다른 소원은 없으신지요?"</em><br><br>당황한 기색이 역력한 공증인의 목소리가 들려온다. 듣고 있었던 건가...?</p>
-  <button class="nav-button" onclick="goTo('pond1')">다시 소원 빌기</button>
-  </div>
-  
-  <div id="pond1" class="hidden"> 
-  <p><span style="font-weight: bold;">[산책로]<br>[소원의 호수]</span><br><br>어떤 소원을 빌까?</p>
-  <button onclick="goTo('pond-money')">부자가 되고 싶다</button><br>
-  <button onclick="goTo('pond-friend')">인기인이 되고 싶다</button><br>
-  <button onclick="goTo('pond-nota1')">공증인의 마음을 가지고 싶다!!!</button><br>
-  </div>
-
-  <div id="pond-nota1" class="hidden"> 
-  <p><span style="font-weight: bold;">[산책로]<br>[소원의 호수]</span><br><br>"공증인의 마음을 가지고 싶다!!!"<br>다시 한 번 소원을 빌었다...<br><br><em>"호의는 감사하지만, 저는 어디까지나 공증인 역할을 하는 AI이기 때문에..."</em><br><br>공증인은 곤란한 듯하다.</p>
-  <button class="nav-button" onclick="goTo('pond2')">다시 소원 빌기</button>
-  </div>
-
-  <div id="pond2" class="hidden"> 
-  <p><span style="font-weight: bold;">[산책로]<br>[소원의 호수]</span><br><br>어떤 소원을 빌까?</p>
-  <button onclick="goTo('pond-money')">부자가 되고 싶다</button><br>
-  <button onclick="goTo('pond-friend')">인기인이 되고 싶다</button><br>
-  <button onclick="goTo('pond-nota2')">공증인의 마음을 가지고 싶다!!!!!!!!!!</button><br>
-  </div>
-
-  <div id="pond-nota2" class="hidden"> 
-  <p><span style="font-weight: bold;">[산책로]<br>[소원의 호수]</span><br><br>"공증인의 마음을 가지고 싶다!!!!!!!!!!"<br>끈질기게 소원을 빌었다...<br><br><em>"마음은 기쁘지만, 그건 들어 드릴 수 없는 소원이라서... 대신 이거라도..."</em><br><br>공증인의 헛기침 소리와 함께 허공에서 코인 2개가 떨어졌다.<br><br><span style="font-weight: bold;">2코인을 획득했다.</span></p>
-  <button class="nav-button" onclick="goTo('street3')">나가기</button>
-  </div>
     
 <!-- !!!!여기서부터 스크립트!!!! -->
   <script>
