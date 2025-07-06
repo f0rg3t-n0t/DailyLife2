@@ -666,12 +666,100 @@
 <p><span style="font-weight: bold;">[미술실]/[전시실]</span><br><br><em>"유언집행자 님, 전시실의 물건에 함부로 손을 대시면 안 됩니다."</em>공증인의 엄숙한 목소리가 들려왔다...<br>혼이 나고 말았다.</p>
 <button class="nav-button" onclick="goTo('art')">나가기</button>
 </div>
-  
-      <!-- 공연장 --> 
+
+    <!-- 공연장 --> 
     <div id="stage" class="hidden">
-    <p><span style="font-weight: bold;">[공연장]</span><br><br></p>
+    <p><span style="font-weight: bold;">[공연장]</span><br><br>원형 극장의 형태를 빌려온 공연장.<br>중앙의 <span style="color: #3f40d3;">무대</span>와 <span style="color: #3f40d3;">조명 관리실</span>, <span style="color: #3f40d3;">분장실</span>까지 제법 그럴싸하다.</p>
+    <button onclick="goTo('mudae')">무대</button>
+    <button onclick="goTo('light')">조명 관리실</button>
+    <button onclick="goTo('makeup')">분장실</button>
     <button class="nav-button" onclick="goTo('3rdfloor')">나가기</button>
-    </div>   
+  </div>
+
+
+    <!-- 공연장 --> 
+    <div id="mudae" class="hidden">
+    <p><span style="font-weight: bold;">[공연장]/[무대]</span><br><br>무대 위에 서자 다닥다닥 붙은 관객석이 눈에 들어온다.<br>지금은 아무도 앉아 있지 않지만, 이렇게 관객석에 둘러싸이는 것만으로도 조금 긴장이 될지도...<br>무대에 서고 나니, 중앙에 붙어 있는 <span style="color: #3f40d3;">작은 종이</span>가 보인다. 안내문인가?</p>
+    <button id="ahffk" onclick="dodo('ahffk')">공연한다</button><br>
+    <button onclick="goTo('paper')">작은 종이</button><br>
+    <button class="nav-button" onclick="goTo('stage')">나가기</button>
+  </div>
+
+    <!-- 작은 종이 --> 
+    <div id="paper" class="hidden">
+    <p><span style="font-weight: bold;">[공연장]/[무대]</span><br><br>"분장실의 미션 상자를 이용해 만반의 준비를 마친 뒤, 무대에서 끼를 펼칠 것."</p>
+    <button class="nav-button" onclick="goTo('stage')">나가기</button>
+  </div>
+
+
+    <!-- 공연장 --> 
+    <div id="mudae1" class="hidden">
+    <p><span style="font-weight: bold;">[공연장]/[무대]</span><br><br>만반의 준비를 갖췄다...! 이제 남은 것은...</p>
+    <button id="stgbtn" onclick="onstage('stgbtn')">끼를 발산한다!!</button><br>
+  </div>
+
+   <!-- 공연장 --> 
+    <div id="onstage1" class="hidden">
+    <p><span style="font-weight: bold;">[공연장]/[무대]</span><br><br>머리띠를 쓰고 무대에 선 것까지는 좋았지만...<br>너무 부끄러워! 이런 모습으로 끼를 발산할 수 있을 리 없다!<br>무대에서 내려오고 말았다...</p>
+    <button class="nav-button" onclick="goTo('stage')">나가기</button>
+  </div>
+
+   <!-- 공연장 --> 
+    <div id="onstage2" class="hidden">
+    <p><span style="font-weight: bold;">[공연장]/[무대]</span><br><br>귀여운 머리띠를 쓰고 무대에 섰다.<br>아무도 없는 공연장에서 깜찍한 모습으로 끼를 발산하기...<br>강한 정신력으로 이겨낸다!!<br><br>최고의 무대를 선보였다.<br>스피커에서 박수 소리가 들려오더니... 2코인이 공중에서 떨어졌다!<br><span style="font-weight: bold;">2코인을 획득했다.</span></p>
+    <button class="nav-button" onclick="goTo('stage')">나가기</button>
+  </div>
+
+   <!-- 공연장 --> 
+    <div id="onstage3" class="hidden">
+    <p><span style="font-weight: bold;">[공연장]/[무대]</span><br><br>용기를 내어 무대에 올랐다.<br>하지만 이런 깜찍한 머리띠로 끼를 발산하라니... 평범하게 어렵잖아?<br>그래도 어떻게든 정신력을 짜내서 무대를 끝마쳤다.<br><br>스피커에서 박수 소리가 들려오더니... 1코인이 공중에서 떨어졌다!<br><span style="font-weight: bold;">1코인을 획득했다.</span></p>
+    <button class="nav-button" onclick="goTo('stage')">나가기</button>
+  </div>
+
+   <!-- 분장실 --> 
+    <div id="makeup" class="hidden">
+    <p><span style="font-weight: bold;">[공연장]/[분장실]</span><br><br>다양한 소품이 준비된 분장실.<br>무대 위에 올라가기 전에는 스타를 더 스타답게 만들어 주는 분장이 필수다.<br>의상이나 악세사리도 준비되어 있고, 메이크업을 위한 소품과 화장품도 늘어서 있다.<br>화장대 아래쪽에 작은 상자가 놓여 있는데...<br><span style="color: #3f40d3;">미션 상자</span>, 라고 쓰여 있다.</p>
+    <button onclick="goTo('makeup1')">미션 상자</button><br>
+    <button class="nav-button" onclick="goTo('stage')">나가기</button>
+  </div>
+
+   <!-- 분장실1 --> 
+    <div id="makeup1" class="hidden">
+    <p><span style="font-weight: bold;">[공연장]/[분장실]</span><br><br>상자를 열자 동물 머리띠가 들어 있다.<br>이걸 사용해서 미션을 수행하는 건가...?<br>우선 동물 머리띠를 골라야 할 것 같다...</p>
+    <button id="tkdwk" onclick="goTodel('cdlist2', 'tkdwk')">머리띠 고르기</button><br>
+    <button class="nav-button" onclick="goTo('stage')">나가기</button>
+  </div>
+
+   <!-- 분장실2 --> 
+    <div id="makeup2" class="hidden">
+    <p><span style="font-weight: bold;">[공연장]/[분장실]</span><br><br>어떤 머리띠를 고를까?</p>
+    <button onclick="goTo('makeup3')">토끼 머리띠</button>
+    <button onclick="goTo('makeup4')">고양이 머리띠</button>
+    <button onclick="goTo('makeup5')">다람쥐 머리띠</button>
+  </div>
+
+   <!-- 분장실3 --> 
+    <div id="makeup3" class="hidden">
+    <p><span style="font-weight: bold;">[공연장]/[분장실]</span><br><br>깜찍한 토끼 머리띠를 손에 넣었다.</p>
+    <button class="nav-button" onclick="goTo('makeup')">나가기</button>
+  </div>
+   <!-- 분장실4 --> 
+    <div id="makeup4" class="hidden">
+    <p><span style="font-weight: bold;">[공연장]/[분장실]</span><br><br>귀여운 고양이 머리띠를 손에 넣었다.</p>
+    <button class="nav-button" onclick="goTo('makeup')">나가기</button>
+  </div>
+   <!-- 분장실5 --> 
+    <div id="makeup5" class="hidden">
+    <p><span style="font-weight: bold;">[공연장]/[분장실]</span><br><br>러블리한 다람쥐 머리띠를 손에 넣었다.</p>
+    <button class="nav-button" onclick="goTo('makeup')">나가기</button>
+  </div>
+
+   <!-- 조명 --> 
+    <div id="light" class="hidden">
+    <p><span style="font-weight: bold;">[공연장]/[분장실]</span><br><br>조명을 설정할 수 있는 방이다.<br>이 조명으로 나만이 빛나도록 하면... 시선을 한 번에 사로잡을 수 있다!</p>
+    <button class="nav-button" onclick="goTo('stage')">나가기</button>
+  </div>
+  
 
       <!-- 도서관 --> 
     <div id="library" class="hidden">
@@ -994,11 +1082,11 @@ function goTo(page) {
   clearOutputs();
   pageHistory.push(page);
   //[중요]특정 페이지 진입 시 스탯(코인 등)변동
-  if (['notary3-2','flowerpage','sofa1-1','sofa1-3','feed2'].includes(page)) {
+  if (['onstage3'].includes(page)) {
     currentUser.coin = (currentUser.coin || 0) + 1;
     updateCoinDisplay();
   }
-  if (['notary5','pond-money','pond-nota2'].includes(page)) {
+  if (['onstage2','pond-money','pond-nota2'].includes(page)) {
     currentUser.coin = (currentUser.coin || 0) + 2;
     updateCoinDisplay();
   }
@@ -1006,8 +1094,16 @@ function goTo(page) {
     currentUser.cd = 1;
     updateCoinDisplay();
   }
-    if (['street2-1-2'].includes(page)) {
-    currentUser.unicycle = true;
+    if (['makeup3'].includes(page)) {
+    currentUser.acc = "토끼 머리띠";
+    updateCoinDisplay();
+  }
+      if (['makeup4'].includes(page)) {
+    currentUser.acc = "고양이 머리띠";
+    updateCoinDisplay();
+  }
+      if (['makeup5'].includes(page)) {
+    currentUser.acc = "다람쥐 머리띠";
     updateCoinDisplay();
   }
     if (['pond-nota2'].includes(page)) {
@@ -1156,7 +1252,31 @@ function listencd(buttonId) {
   }
 }
 
+//★★★★★머리띠★★★★★
+function dodo(buttonId) {
+  if (currentUser.acc) {
+    // 버튼 제거
+    const btn = document.getElementById(buttonId);
+    if (btn) btn.remove();  // 단 한 번만 제거
+    goTo('mudae1');
+  } else {
+    alert("준비물이 부족하다. 작은 종이의 내용을 읽어 보자.");
+  }
+}
 
+//★★★★공연하기★★★★
+function onstage(buttonId) {
+  if (currentUser.POW <= 2) {
+    goTo('onstage1');
+  } else if (currentUser.POW >= 4) {
+    goTo('onstage2');
+  } else {
+    goTo('onstage3');
+  }
+    const btn = document.getElementById(buttonId);
+    if (btn) btn.remove()  // 단 한 번만 제거
+}
+    
 //★★★★★퀴즈★★★★★
 function checkSecretCode() {
   const input = document.getElementById('secret-code-input').value;
