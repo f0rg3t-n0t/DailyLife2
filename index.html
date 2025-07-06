@@ -475,12 +475,18 @@
     <!-- 영화관 --> 
     <div id="cinema" class="hidden">
     <p><span style="font-weight: bold;">[영화관]</span><br><br>소규모지만, 제법 영화관 분위기가 나는 <span style="color: #3f40d3;">스크린</span>과 관람용 <span style="color: #3f40d3;">좌석</span>이 설치된 공간이다.<br>한쪽에는 <span style="color: #3f40d3;">팝콘 기계</span>까지 설치되어 있고, 그 옆에는 예전에 레스토랑에 있었던 <span style="color: #3f40d3;">음료 디스펜서 v2.0</span>도 옮겨 와 있다. v2.0...?</p>
+    <button onclick="goTo('screen')">스크린</button>
+    <button onclick="goTo('seat')">좌석</button>    
+    <button onclick="goTo('seat')">팝콘 기계</button>    
+    <button onclick="goTo('dispenser')">음료 디스펜서 v2.0</button>      
     <button class="nav-button" onclick="goTo('3rdfloor')">나가기</button>
     </div>   
 
-      <!-- 미술실 --> 
+    <!-- 미술실 --> 
     <div id="art" class="hidden">
-    <p><span style="font-weight: bold;">[미술실]</span><br><br></p>
+    <p><span style="font-weight: bold;">[미술실]</span><br><br>예술적 소양을 함양할 수 있는 공간. 이곳저곳 이젤과 화구가 놓여 있다.<br>크게 <span style="color: #3f40d3;">작업실</span>과 <span style="color: #3f40d3;">전시실</span>로 나누어져 있는 듯하다.</p>
+    <button onclick="goTo('atlier')">작업실</button>
+    <button onclick="goTo('museum')">전시실</button>  
     <button class="nav-button" onclick="goTo('3rdfloor')">나가기</button>
     </div>   
 
