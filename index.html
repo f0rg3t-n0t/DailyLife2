@@ -548,11 +548,80 @@
     <p><span style="font-weight: bold;">[영화관]</span><br><br>소규모지만, 제법 영화관 분위기가 나는 <span style="color: #3f40d3;">스크린</span>과 관람용 <span style="color: #3f40d3;">좌석</span>이 설치된 공간이다.<br>한쪽에는 <span style="color: #3f40d3;">팝콘 기계</span>까지 설치되어 있고, 그 옆에는 예전에 레스토랑에 있었던 <span style="color: #3f40d3;">음료 디스펜서 v2.0</span>도 옮겨 와 있다. v2.0...?</p>
     <button onclick="goTo('screen')">스크린</button>
     <button onclick="goTo('seat')">좌석</button>    
-    <button onclick="goTo('seat')">팝콘 기계</button>    
+    <button onclick="goTo('pop')">팝콘 기계</button>    
     <button onclick="goTo('dispenser')">음료 디스펜서 v2.0</button>      
     <button class="nav-button" onclick="goTo('3rdfloor')">나가기</button>
     </div>   
 
+    <!-- 스크린 --> 
+    <div id="screen" class="hidden">
+    <p><span style="font-weight: bold;">[영화관]/[스크린]</span><br><br>진짜 영화관의 스크린 규모는 아니지만, 그래도 기분을 내기에는 좋을 법한 대형 스크린이다.<br>가끔 현실을 잊고 싶을 때는 여기에 와서 영화를 시청하는 것도 좋은 선택일 것 같다...</p>
+    <button class="nav-button" onclick="goTo('cinema')">나가기</button>
+  </div>
+
+
+
+    <!-- 좌석 --> 
+    <div id="seat" class="hidden">
+    <p><span style="font-weight: bold;">[영화관]/[좌석]</span><br><br>리클라이닝 시스템이 완비된 최신식 좌석이다.<br>앉아 보면 무척 편하다. 낮잠을 자기에도 딱일 정도.<br>그런데 영화관 가장 구석을 보면 수상한 좌석이 하나 놓여 있다...<br><br>《강한 자만 앉을 수 있는 좌석》...?</p>
+    <button onclick="goTo('seat1')">강한 자만 앉을 수 있는 좌석</button>
+    <button class="nav-button" onclick="goTo('cinema')">나가기</button>
+  </div>
+
+    <!-- 좌석1 --> 
+    <div id="seat1" class="hidden">
+    <p><span style="font-weight: bold;">[영화관]/[좌석]</span><br><br>좌석을 확인하면, 공연장이나 영화관에서 흔히 볼 수 있는 접이식 의자지만...<br>어째서인지 등받이와 좌석이 굉장히 강한 힘으로 고정되어 있다.<br>여기 앉으려면 온 힘을 다해 접이식 의자를 펴야 할 것 같다...<br>앉으려고 시도해 볼까?</p>
+    <button id="stbtn" onclick="strongseat('stbtn')">앉으려고 시도한다</button><br>
+    <button class="nav-button" onclick="goTo('seat')">나가기</button>
+  </div>
+
+
+    <!-- 좌석2 --> 
+    <div id="seat2" class="hidden">
+    <p><span style="font-weight: bold;">[영화관]/[좌석]</span><br><br>접이식 의자를 펴려고 시도했다.<br>하지만 의자는 조금도 움직이지 않는다!<br>억지로 펴려고 하다가 뒤로 나동그라지고 말았다. 아야야...<br>아무도 안 봤겠지...?</p>
+    <button class="nav-button" onclick="goTo('seat')">나가기</button>
+  </div>
+
+    <!-- 좌석3 --> 
+    <div id="seat3" class="hidden">
+    <p><span style="font-weight: bold;">[영화관]/[좌석]</span><br><br>접이식 의자를 펴려고 시도했다.<br>하지만 의자는 조금도 움직이지 않는다!<br>아직 '강한 자'가 되기에는 힘이 부족하다...<br>더 강해진 다음에 시도하도록 하자.</p>
+    <button class="nav-button" onclick="goTo('seat')">나가기</button>
+  </div>
+
+    <!-- 좌석4 --> 
+    <div id="seat4" class="hidden">
+    <p><span style="font-weight: bold;">[영화관]/[좌석]</span><br><br>접이식 의자를 펴려고 시도했다.<br>힘에는 자신이 있지만, 이 의자, 굉장한 호적수다...!<br>하지만 사투 끝에 겨우 의자를 펴고 위에 앉을 수 있었다.<br>강한 자는 어떤 의자 위에도 앉을 수 있는 법이다...<br>의자를 펴고 나니, 좌석 사이에 무언가 걸려 있었는지 땅으로 떨어지는 소리가 났다.<br>이건... 코인이다!<br><br><span style="font-weight: bold;">1코인을 획득했다.</span></p>
+    <button class="nav-button" onclick="goTo('cinema')">나가기</button>
+  </div>
+
+  <!-- 팝콘 --> 
+    <div id="pop" class="hidden">
+    <p><span style="font-weight: bold;">[영화관]/[팝콘 기계]</span><br><br>영화를 볼 때는 역시 팝콘이 빠질 수 없지! 마음껏 팝콘을 뽑을 수 있는 기계다.<br>'30여 가지 맛이 준비되어 있습니다' 라고 적혀 있다.<br>그런데... 버튼은 한 개뿐이다.</p>
+    <button id="ppbtn" onclick="getpopcorn('ppbtn')">팝콘을 뽑는다</button><br>
+    <button class="nav-button" onclick="goTo('cinema')">나가기</button>
+  </div>
+
+    <!-- 팝콘 --> 
+    <div id="pop1" class="hidden">
+    <p><span style="font-weight: bold;">[영화관]/[팝콘 기계]</span><br><br>팝콘을 뽑았다.<br>팝콘 기계의 화면에 '고수녹즙파프리카맛'이라고 쓰여 있다.<br>이게... 대체 무슨 맛이지?</p>
+    <button class="nav-button" onclick="goTo('cinema')">나가기</button>
+  </div>
+
+    <!-- 팝콘 --> 
+    <div id="pop2" class="hidden">
+    <p><span style="font-weight: bold;">[영화관]/[팝콘 기계]</span><br><br>팝콘을 뽑았다.<br>팝콘 기계의 화면에 '솔트 카라멜 맛'이라고 쓰여 있다.<br>고소하고 달콤 짭짤한 향기가 풍긴다... 운이 좋았다!</p>
+    <button class="nav-button" onclick="goTo('cinema')">나가기</button>
+  </div>
+
+    <!-- 팝콘 --> 
+    <div id="pop3" class="hidden">
+    <p><span style="font-weight: bold;">[영화관]/[팝콘 기계]</span><br><br>팝콘을 뽑았다.<br>팝콘 기계의 화면에 '소금 맛'이라고 쓰여 있다.<br>평범하지만 이 정도면 나쁘지 않은가?</p>
+    <button class="nav-button" onclick="goTo('cinema')">나가기</button>
+  </div>
+
+
+
+  
     <!-- 미술실 --> 
     <div id="art" class="hidden">
     <p><span style="font-weight: bold;">[미술실]</span><br><br>예술적 소양을 함양할 수 있는 공간. 이곳저곳 이젤과 화구가 놓여 있다.<br>크게 <span style="color: #3f40d3;">작업실</span>과 <span style="color: #3f40d3;">전시실</span>로 나누어져 있는 듯하다.</p>
@@ -1049,56 +1118,8 @@ function listencd(buttonId) {
     alert("CD를 가지고 있지 않다. 골라 오도록 하자.");
   }
 }
-//★★★★★냉장고★★★★★
-function openfridge(buttonId) {
-  if (currentUser.STR >= 4) {
-    goTo('fridge1');
-  } else {
-    const result = document.getElementById('fridge-result');
-    result.innerText = "열심히 문을 당겨 봤지만... 꿈쩍도 하지 않는다. 힘이 부족해...!";
-  }
-}
-//★★★★★토스트★★★★★
-function maketoast(buttonId) {
-  if (currentUser.bread === 1) {
-    // 버튼 제거
-    const btn = document.getElementById(buttonId);
-    if (btn) btn.remove();  // 단 한 번만 제거
-    goTo('toaster');
-  } else {
-    alert("식빵을 가지고 있지 않다. 어디 있으려나?");
-  }
-}
-//★★★★★토스트 굽기★★★★★
-function toasttime(buttonId) {
-  if (currentUser.LUC <= 2) {
-    goTo('overcook');
-  } else if (currentUser.LUC >= 4) {
-    goTo('perfect');
-  } else {
-    goTo('undercook');
-  }
-}
-//★★★★★갈매기 밥★★★★★
-function feedgalmaegi(buttonId) {
-  if (currentUser.POW <= 2) {
-    goTo('feed1');
-  } else if (currentUser.POW >= 4) {
-    goTo('feed2');
-  } else {
-    goTo('feed3');
-  }
-}
-//★★★★★탐조★★★★★
-function watchbird(buttonId) {
-  if (currentUser.OBS <= 2) {
-    goTo('sand2');
-  } else if (currentUser.OBS >= 4) {
-    goTo('sand3');
-  } else {
-    goTo('sand4');
-  }
-}
+
+
 //★★★★★퀴즈★★★★★
 function checkSecretCode() {
   const input = document.getElementById('secret-code-input').value;
@@ -1114,7 +1135,31 @@ function checkSecretCode() {
     result.innerText = "공증인은 침묵하고 있다... 아무래도 이게 정답이 아닌 것 같다.";
   }
 }    
+//★★★★★강한자의좌석★★★★★
+function strongseat(buttonId) {
+  if (currentUser.STR <= 2) {
+    goTo('seat2');
+  } else if (currentUser.STR >= 4) {
+    goTo('seat4');
+  } else {
+    goTo('seat3');
+  }
+    const btn = document.getElementById(buttonId);
+    if (btn) btn.remove()  // 단 한 번만 제거
+}
 
+//★★★★팝콘뽑기★★★★
+function getpopcorn(buttonId) {
+  if (currentUser.LUC <= 2) {
+    goTo('pop1');
+  } else if (currentUser.LUC >= 4) {
+    goTo('pop2');
+  } else {
+    goTo('pop3');
+  }
+    const btn = document.getElementById(buttonId);
+    if (btn) btn.remove()  // 단 한 번만 제거
+}
 
 //★★★★★음료 디스펜서★★★★★
 // 음료 효과음 공통
