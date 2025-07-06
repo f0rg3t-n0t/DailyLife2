@@ -423,9 +423,9 @@
   <div id="dispenser1" class="hidden">
   <p><span style="font-weight: bold;">[레스토랑]/[음료 디스펜서]</span><br><br>
   원하는 음료를 가져가거나 랜덤 디스펜서를 이용해 보자. 랜덤 디스펜서는 1일 3회 사용 제한이 있는 것 같지만...</p>
-  <button onclick="selectDrink('coffee')">커피</button>
-  <button onclick="selectDrink('green-tea')">녹차</button>
-  <button onclick="selectDrink('orange-juice')">오렌지 주스</button>
+  <button onclick="selectDrink('coke')">콜라</button>
+  <button onclick="selectDrink('melon')">메론 소다</button>
+  <button onclick="selectDrink('boricha')">보리차</button>
   <button onclick="selectRandomDrink()">랜덤</button>
   <p id="drink-result" style="margin-top: 2em; font-weight: bold;"></p>
   <button class="nav-button" onclick="goTo('dispenser')">나가기</button>
@@ -466,12 +466,53 @@
     <!-- 음악실 --> 
     <div id="music" class="hidden">
     <p><span style="font-weight: bold;">[음악실]</span><br><br>다양한 악기와 음반을 모아 둔 음악실.<br>방음 시설이 완비된 <span style="color: #3f40d3;">녹음 부스</span>와 <span style="color: #3f40d3;">CD 감상 부스</span>가 설치되어 있다.<br>또, <span style="color: #3f40d3;">악기 보관실</span>이라고 쓰인 작은 문이 구석에 배치된 것이 보인다.</p>
-    <button onclick="goTo('suite')">녹음 부스</button>
-    <button onclick="goTo('suite')">CD 감상 부스</button>
-    <button onclick="goTo('suite')">악기 보관실</button>
+    <button onclick="goTo('recording')">녹음 부스</button>
+    <button onclick="goTo('cd')">CD 감상 부스</button>
+    <button onclick="goTo('inst')">악기 보관실</button><br>
     <button class="nav-button" onclick="goTo('3rdfloor')">나가기</button>
   </div>
 
+    <!-- 녹음 부스 --> 
+    <div id="recording" class="hidden">
+    <p><span style="font-weight: bold;">[녹음실]</span><br><br>이곳에서라면 누구나 스타가 될 수 있다!<br>노래 실력을 뽐낼 수 있는 마이크와 헤드셋이 구비된 녹음 부스.</p>
+    <button onclick="goTo('recording1')">노래한다</button><br>
+    <button class="nav-button" onclick="goTo('music')">나가기</button>
+  </div>
+
+
+    <!-- 녹음 부스 --> 
+    <div id="recording1" class="hidden">
+    <p><span style="font-weight: bold;">[녹음실]</span><br><br>어떤 곡에 맞춰서 노래를 부를까?</p>
+    <button onclick="goTo('recording2')">잔잔한 발라드</button><br>
+    <button onclick="goTo('recording3')">신나는 댄스곡</button><br>
+  </div>
+
+    <!-- 녹음 부스 --> 
+    <div id="recording2" class="hidden">
+    <p><span style="font-weight: bold;">[녹음실]</span><br><br>어떤 마음가짐으로 노래를 부를까?</p>
+    <button onclick="goTo('recording4')">나만의 그루브를 담아서</button><br>
+    <button onclick="goTo('recording5')">음 하나하나에 심혈을 기울여서</button><br>
+  </div>
+
+    <!-- 녹음 부스 --> 
+    <div id="recording3" class="hidden">
+    <p><span style="font-weight: bold;">[녹음실]</span><br><br>어떤 마음가짐으로 노래를 부를까?</p>
+    <button onclick="goTo('recording4')">나만의 그루브를 담아서</button><br>
+    <button onclick="goTo('recording5')">음 하나하나에 심혈을 기울여서</button><br>
+  </div>
+
+    <!-- 녹음 부스 --> 
+    <div id="recording4" class="hidden">
+    <p><span style="font-weight: bold;">[녹음실]</span><br><br>그루비하게 열창했다! 점수는...<span id="recording-score"></span></p>
+    <button class="nav-button" onclick="goTo('music')">나가기</button>
+  </div>
+
+    <!-- 녹음 부스 --> 
+    <div id="recording5" class="hidden">
+    <p><span style="font-weight: bold;">[녹음실]</span><br><br>섬세하게 열창했다! 점수는...<span id="recording-score"></span></p>
+    <button class="nav-button" onclick="goTo('music')">나가기</button>
+  </div>
+  
     <!-- 영화관 --> 
     <div id="cinema" class="hidden">
     <p><span style="font-weight: bold;">[영화관]</span><br><br>소규모지만, 제법 영화관 분위기가 나는 <span style="color: #3f40d3;">스크린</span>과 관람용 <span style="color: #3f40d3;">좌석</span>이 설치된 공간이다.<br>한쪽에는 <span style="color: #3f40d3;">팝콘 기계</span>까지 설치되어 있고, 그 옆에는 예전에 레스토랑에 있었던 <span style="color: #3f40d3;">음료 디스펜서 v2.0</span>도 옮겨 와 있다. v2.0...?</p>
@@ -1073,25 +1114,14 @@ function goTo(page) {
     currentUser.bread = 1;
     updateCoinDisplay();
   }
-          if (['fltest6'].includes(page)) {
-    currentUser.post = "아데니움이";
-    updateCoinDisplay();
-  }
-          if (['fltest7'].includes(page)) {
-    currentUser.post = "능소화가";
-    updateCoinDisplay();
-  }
-          if (['fltest8'].includes(page)) {
-    currentUser.post = "거베라가";
-    updateCoinDisplay();
-  }
-          if (['fltest9'].includes(page)) {
-    currentUser.post = "라벤더가";
-    updateCoinDisplay();
-  }
     if (page === 'starting-point') {
     document.getElementById('persistent-nav').style.display = 'flex';
   }
+  if (page === 'recording4'|| page === 'recording5') {
+  const scoreEl = document.getElementById('recording-score');
+  const randomScore = Math.floor(Math.random() * 101); // 0~100
+  scoreEl.innerText = `${randomScore}점!`;
+}
   //얘네는 버튼 없애기용인데 이렇게 하지 말고 goTodel 사용을 고려할 것 ...
   const flowerButton = document.getElementById('flower-button-box');
 if (flowerButton) {
@@ -1105,6 +1135,7 @@ if (page === 'notary4' && codebox) {
 }
   document.getElementById('user-display').classList.remove('hidden');
 }
+  
 
 //★★★★★goTodel(이동과 동시에 버튼 삭제)★★★★★   
 function goTodel(targetPage, buttonId) {
@@ -1290,9 +1321,9 @@ function playDrinkSound() {
 // 일반 음료 선택 함수
 function selectDrink(type) {
   const messages = {
-    coffee: { title: "커피", desc: "원두의 고소한 향을 살린 커피. 은은하게 남는 잔향이 매력적이다." },
-    "green-tea": { title: "녹차", desc: "시원하게 얼음을 띄운 녹차." },
-    "orange-juice": { title: "오렌지 주스", desc: "상큼한 오렌지 주스. 더위를 싹 날려 주는 맛이다." }
+    coke: { title: "콜라", desc: "영화관에서는 콜라! 팝콘과의 궁합을 자랑하는 시원한 음료." },
+    "melon": { title: "메론 소다", desc: "약간의 인공적인 메론 향이 오히려 매력적인 탄산음료." },
+    "boricha": { title: "보리차", desc: "건강한 어른을 위한 무난한 음료." }
   };
   const msg = messages[type];
   const resultBox = document.getElementById("drink-result");
