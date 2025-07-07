@@ -326,9 +326,9 @@
       <!-- 로비:엘리베이터:탑승 --> 
     <div id="elevator" class="hidden">
     <p><span style="font-weight: bold;">[엘리베이터]</span><br><br>원하는 층으로 이동할 수 있다.<br>하지만 4층 이상부터는 정비 중인지, 버튼을 눌러도 불이 들어오지 않는다.</p>
-    <button onclick="goToWithSound('inside','zzapelevator.mp3')">1층</button><br>
+      <button onclick="goToWithSound('3rdfloor','zzapelevator.mp3')">3층</button><br>
     <button onclick="goToWithSound('2ndfloor','zzapelevator.mp3')">2층</button><br>
-    <button onclick="goToWithSound('3rdfloor','zzapelevator.mp3')">3층</button><br>
+      <button onclick="goToWithSound('inside','zzapelevator.mp3')">1층</button><br>
  </div>     
   
     <!-- 로비 --> 
@@ -481,13 +481,13 @@
 
     <!-- 녹음 부스 --> 
     <div id="recording4" class="hidden">
-    <p><span style="font-weight: bold;">[음악실]/[녹음실]</span><br><br>그루비하게 열창했다! 점수는...<span id="recording-score-4"></span><br>열심히 노래하고 나니 허공에서 1코인이 떨어졌다. 감상료인가...?<br><br><span style="font-weight: bold;">1코인을 획득했다.</span></p>
+    <p><span style="font-weight: bold;">[음악실]/[녹음실]</span><br><br>그루비하게 열창했다! 점수는...<span id="recording-score-4"></span><br>열심히 노래하고 나니 허공에서 1코인이 떨어졌다. 공연의 답례인가...?<br><br><span style="font-weight: bold;">1코인을 획득했다.</span></p>
     <button class="nav-button" onclick="goTo('music')">나가기</button>
   </div>
 
     <!-- 녹음 부스 --> 
     <div id="recording5" class="hidden">
-    <p><span style="font-weight: bold;">[음악실]/[녹음실]</span><br><br>섬세하게 열창했다! 점수는...<span id="recording-score-5"></span><br>열심히 노래하고 나니 허공에서 1코인이 떨어졌다. 감상료인가...?<br><br><span style="font-weight: bold;">1코인을 획득했다.</span></p>
+    <p><span style="font-weight: bold;">[음악실]/[녹음실]</span><br><br>섬세하게 열창했다! 점수는...<span id="recording-score-5"></span><br>열심히 노래하고 나니 허공에서 1코인이 떨어졌다. 공연의 답례인가...?<br><br><span style="font-weight: bold;">1코인을 획득했다.</span></p>
     <button class="nav-button" onclick="goTo('music')">나가기</button>
   </div>
 
@@ -635,7 +635,6 @@
   <!-- 작업실1 --> 
 <div id="atlier1" class="hidden">
 <p><span style="font-weight: bold;">[미술실]/[작업실]</span><br><br>예술혼을 불태우기 위한 작업을 시작했다.<br><br>허공에서 목소리가 들린다...<br><em>"멋진 작품이군요. 전시실에 특별 전시 공간을 만들어 전시해보도록 하겠습니다."</em><br><br>초세계급 화가의 그림 옆에　이 그림이...?</p>
- <button onclick="goTo('atlier1')">그림을 그린다</button>
   <button class="nav-button" onclick="goTo('art')">나가기</button>
 </div>
 
@@ -677,7 +676,7 @@
     <p><span style="font-weight: bold;">[공연장]</span><br><br>원형 극장의 형태를 빌려온 공연장.<br>중앙의 <span style="color: #3f40d3;">무대</span>와 <span style="color: #3f40d3;">조명 관리실</span>, <span style="color: #3f40d3;">분장실</span>까지 제법 그럴싸하다.<br>구석에 <span style="color: #3f40d3;">'인생한컷'</span>이라고 쓰인 부스가 있다.</p>
     <button onclick="goTo('mudae')">무대</button>
     <button onclick="goTo('light')">조명 관리실</button>
-    <button onclick="goTo('makeup')">분장실</button><br>
+    <button onclick="goTo('makeup')">분장실</button>
     <button onclick="goTo('onecut')">인생한컷</button><br>
     <button class="nav-button" onclick="goTo('3rdfloor')">나가기</button>
   </div>
