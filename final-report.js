@@ -23,21 +23,19 @@ function loadFinalReport() {
     { html: `<span style="color: black;">Coin : ${currentUser.coin}</span>`, align: 'left', lineStyle: 'color: black;' }
   ];
 
-  if (currentUser.key === 1) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">손끝에 미세하게 꽃향기가 남아 있다 …</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+  if (currentUser.cd === 1) {
+    lines.push({ html: `<div style="color: black; font-style: italic;">CD로 재생한 음악이 귓가에서 잔잔하게 울리는 것 같다 …</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
-  if (currentUser.unicycle === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">외바퀴자전거 타는 법을 마스터했다 …</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
-  }
-  if (currentUser.wishticket === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">‘소원권’ 을 획득했다. 선물할 시 상대의 호감도에 +2 …</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
-  }
-  if (currentUser.notalove === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">공증인의 호의를 얻은 것 같다 …</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
-  }
-  if (currentUser.post) {
+  if (currentUser.music) {
   lines.push({
-    html: `<div style="color: black; font-style: italic;">${currentUser.post} 압화된 엽서를 손에 넣었다 …</div>`,
+    html: `<div style="color: black; font-style: italic;">${currentUser.music} 최선을 다해 열창했다 …</div>`,
+    align: 'right',
+    lineStyle: 'color: black; font-style: italic;'
+  });
+}
+  if (currentUser.acc) {
+  lines.push({
+    html: `<div style="color: black; font-style: italic;">${currentUser.acc} 를 손에 넣었다 …</div>`,
     align: 'right',
     lineStyle: 'color: black; font-style: italic;'
   });
