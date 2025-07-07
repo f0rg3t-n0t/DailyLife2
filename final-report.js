@@ -35,11 +35,21 @@ function loadFinalReport() {
 }
   if (currentUser.acc) {
   lines.push({
-    html: `<div style="color: black; font-style: italic;">${currentUser.acc} 를 손에 넣었다 …</div>`,
+    html: `<div style="color: black; font-style: italic;">${currentUser.acc}를 손에 넣었다 …</div>`,
     align: 'right',
     lineStyle: 'color: black; font-style: italic;'
   });
 }
+  if (currentUser.photo) {
+  lines.push({
+    html: `<div style="color: black; font-style: italic;">${currentUser.acc} 포즈의 영정사진을 손에 넣었다 …</div>`,
+    align: 'right',
+    lineStyle: 'color: black; font-style: italic;'
+  });
+}
+  if (currentUser.art === 1) {
+    lines.push({ html: `<div style="color: black; font-style: italic;">초세계급 화가의 그림 옆에 작품을 전시하게 되었다 …</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+  }
   if (currentUser.gongmo && currentUser.gongmo.length > 0) {
   lines.push({
     html: `<div style="color: black; font-style: italic;">"${currentUser.gongmo}"로 랜덤 음료 공모전에 참여했다 …</div>`,
