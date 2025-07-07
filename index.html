@@ -334,7 +334,7 @@
     <!-- 로비 --> 
     <div id="lobby" class="hidden">
     <p><span style="font-weight: bold;">[로비]</span><br><br>건물에 들어오면 가장 먼저 보게 되는 곳.<br>우아한 석조 <span style="color: #3f40d3;">카운터</span>를 중심으로 내빈을 위한 라운지가 마련되어 있다.</p>
-    <button onclick="goTo('counter')">카운터</button>
+    <button onclick="goTo('counter')">카운터</button><br>
     <button class="nav-button" onclick="goTo('inside')">나가기</button>
   </div>
 
@@ -434,7 +434,7 @@
 
     <!-- 3층 --> 
     <div id="3rdfloor" class="hidden">
-    <p><span style="font-weight: bold;">[3층]</span><br><br>3층으로 올라오면, 한눈에 봐도 굉장히 넓은 시설이 있음을 확인할 수 있다.<br>여러 개의 방문에 반짝거리는 문패가 붙어 있는데, 그야말로 '문화생활'에 걸맞는 시설들이다.<br>창문 너머로는 섬의 모습이 내려다보인다.<br>저 멀리 메모리얼 파크에 묘지 세 개가 늘어서 있다...</p>
+    <p><span style="font-weight: bold;">[3층]</span><br><br>3층으로 올라오면, 한눈에 봐도 굉장히 다채로운 시설이 있음을 확인할 수 있다.<br>여러 개의 방문에 반짝거리는 문패가 붙어 있는데, 그야말로 '문화생활'에 걸맞는 시설들이다.<br>창문 너머로는 섬의 모습이 내려다보인다.<br>저 멀리 메모리얼 파크에 묘비 세 개가 늘어서 있다...</p>
     <button onclick="goTo('elevator')">엘리베이터</button><br>
     <button onclick="goTo('music')">음악실</button>
     <button onclick="goTo('cinema')">영화관</button>
@@ -456,7 +456,7 @@
     <!-- 녹음 부스 --> 
     <div id="recording" class="hidden">
     <p><span style="font-weight: bold;">[음악실]/[녹음실]</span><br><br>이곳에서라면 누구나 스타가 될 수 있다!<br>노래 실력을 뽐낼 수 있는 마이크와 헤드셋이 구비된 녹음 부스.</p>
-    <button onclick="goTo('recording1')">노래한다</button><br>
+    <button id="lulu" onclick="goTodel('recording1', 'lulu')">노래한다</button><br>
     <button class="nav-button" onclick="goTo('music')">나가기</button>
   </div>
 
@@ -549,7 +549,7 @@
     <button onclick="goTo('screen')">스크린</button>
     <button onclick="goTo('seat')">좌석</button>    
     <button onclick="goTo('pop')">팝콘 기계</button>    
-    <button onclick="goTo('dispenser')">음료 디스펜서 v2.0</button>      
+    <button onclick="goTo('dispenser')">음료 디스펜서 v2.0</button><br>      
     <button class="nav-button" onclick="goTo('3rdfloor')">나가기</button>
     </div>   
 
@@ -564,7 +564,7 @@
     <!-- 좌석 --> 
     <div id="seat" class="hidden">
     <p><span style="font-weight: bold;">[영화관]/[좌석]</span><br><br>리클라이닝 시스템이 완비된 최신식 좌석이다.<br>앉아 보면 무척 편하다. 낮잠을 자기에도 딱일 정도.<br>그런데 영화관 가장 구석을 보면 수상한 좌석이 하나 놓여 있다...<br><br>《강한 자만 앉을 수 있는 좌석》...?</p>
-    <button onclick="goTo('seat1')">강한 자만 앉을 수 있는 좌석</button>
+    <button onclick="goTo('seat1')">강한 자만 앉을 수 있는 좌석</button><br>
     <button class="nav-button" onclick="goTo('cinema')">나가기</button>
   </div>
 
@@ -663,7 +663,7 @@
 
 <!-- 전시실 --> 
 <div id="museum4" class="hidden">
-<p><span style="font-weight: bold;">[미술실]/[전시실]</span><br><br><em>"유언집행자 님, 전시실의 물건에 함부로 손을 대시면 안 됩니다."</em>공증인의 엄숙한 목소리가 들려왔다...<br>혼이 나고 말았다.</p>
+<p><span style="font-weight: bold;">[미술실]/[전시실]</span><br><br><em>"유언집행자 님, 전시실의 물건에 함부로 손을 대시면 안 됩니다."</em><br>공증인의 엄숙한 목소리가 들려왔다...<br>혼이 나고 말았다.</p>
 <button class="nav-button" onclick="goTo('art')">나가기</button>
 </div>
 
@@ -793,19 +793,19 @@
     <!-- 책장 --> 
     <div id="bookshelf1" class="hidden">
     <p><span style="font-weight: bold;">[도서관]/[책장]</span><br><br>문학 서가의 추천도서는...<br>붉은 머리의 체스마스터가 각 분야의 천재들을 한 명씩 쓰러뜨리는 내용의 소설이다.<br>세상의 모든 분야를 섭렵하고 만 체스마스터는 왕좌에 올라앉아 도전자를 기다리고 있다고 한다.<br>모든 내용은 허구이며 실제 인물을 바탕으로 하고 있지 않다고 적혀 있다.</p>
-    <button class="nav-button" onclick="goTo('library')">나가기</button>
+    <button class="nav-button" onclick="goTo('bookshelf')">나가기</button>
     </div>   
 
     <!-- 책장 --> 
     <div id="bookshelf2" class="hidden">
     <p><span style="font-weight: bold;">[도서관]/[책장]</span><br><br>자연과학 서가의 추천도서는...<br>화산학자들에 대한 이야기이다.<br>화산학자들은 성격이 화산 같다는 이야기가 있다고 쓰여 있다.</p>
-    <button class="nav-button" onclick="goTo('library')">나가기</button>
+    <button class="nav-button" onclick="goTo('bookshelf')">나가기</button>
     </div>   
 
     <!-- 책장 --> 
     <div id="bookshelf3" class="hidden">
     <p><span style="font-weight: bold;">[도서관]/[책장]</span><br><br>사회과학 서가의 추천도서는...<br>'친구 100명 사귀는 100가지 방법'이라는 띠지를 두른 자기계발서이다.<br>100명의 친구를 사귀려면 한 사람 한 사람에 맞는 100가지 방법이 필요하다는 무난한 내용의 책이다.</p>
-    <button class="nav-button" onclick="goTo('library')">나가기</button>
+    <button class="nav-button" onclick="goTo('bookshelf')">나가기</button>
     </div>   
  
 
@@ -1128,7 +1128,7 @@ function goTo(page) {
     currentUser.coin = (currentUser.coin || 0) + 1;
     updateCoinDisplay();
   }
-  if (['onstage2'].includes(page)) {
+  if (['onstage2','notary5'].includes(page)) {
     currentUser.coin = (currentUser.coin || 0) + 2;
     updateCoinDisplay();
   }
@@ -1154,14 +1154,6 @@ function goTo(page) {
   }
       if (['recording3'].includes(page)) {
     currentUser.music = "댄스곡을";
-    updateCoinDisplay();
-  }
-      if (['pond-friend'].includes(page)) {
-    currentUser.wishticket = true;
-    updateCoinDisplay();
-  }
-        if (['drawer1'].includes(page)) {
-    currentUser.bread = 1;
     updateCoinDisplay();
   }
     if (page === 'starting-point') {
