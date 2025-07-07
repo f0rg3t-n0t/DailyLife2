@@ -42,7 +42,7 @@ function loadFinalReport() {
 }
   if (currentUser.photo) {
   lines.push({
-    html: `<div style="color: black; font-style: italic;">${currentUser.acc} 포즈의 영정사진을 손에 넣었다 …</div>`,
+    html: `<div style="color: black; font-style: italic;">${currentUser.photo} 포즈의 영정사진을 손에 넣었다 …</div>`,
     align: 'right',
     lineStyle: 'color: black; font-style: italic;'
   });
