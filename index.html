@@ -368,7 +368,7 @@
 
       <!-- 로비:카운터:notary4 --> 
     <div id="notary4" class="hidden">
-    <p><span style="font-weight: bold;">[로비]/[카운터]<br>[공증인]</span><br><br><em>"그럼 문제입니다. 미래기관 대출 순위 1위 도서의 제목을 알고 계신가요?"</em><br><br>정확한 제목을 입력하자.</p>
+    <p><span style="font-weight: bold;">[로비]/[카운터]<br>[공증인]</span><br><br><em>"그럼 문제입니다. 미래기관 대출 순위 1위 도서의 제목을 알고 계신가요?"</em><br><br>정확한 제목을 괄호 없이 입력하자.</p>
     <input type="text" id="secret-code-input">
     <div id="codebox">
     <button onclick="checkSecretCode()">확인</button>
@@ -726,7 +726,7 @@
    <!-- 분장실1 --> 
     <div id="makeup1" class="hidden">
     <p><span style="font-weight: bold;">[공연장]/[분장실]</span><br><br>상자를 열자 동물 머리띠가 들어 있다.<br>이걸 사용해서 미션을 수행하는 건가...?<br>우선 동물 머리띠를 골라야 할 것 같다...</p>
-    <button id="tkdwk" onclick="goTodel('cdlist2', 'tkdwk')">머리띠 고르기</button><br>
+    <button id="tkdwk" onclick="goTodel('makeup2', 'tkdwk')">머리띠 고르기</button><br>
     <button class="nav-button" onclick="goTo('stage')">나가기</button>
   </div>
 
@@ -760,14 +760,56 @@
     <button class="nav-button" onclick="goTo('stage')">나가기</button>
   </div>
   
-
-      <!-- 도서관 --> 
+    <!-- 도서관 --> 
     <div id="library" class="hidden">
-    <p><span style="font-weight: bold;">[도서관]</span><br><br></p>
+    <p><span style="font-weight: bold;">[도서관]</span><br><br>장서의 종류별로 정리된 책장이 숲처럼 펼쳐진다.<br>지식의 보고라고 불리기에 손색없을 정도의 대형 도서관.<br><span style="color: #3f40d3;">열람실</span> 안에 들어가거나 <span style="color: #3f40d3;">책장</span>에서 책을 고를 수 있을 것 같다.</p>
+    <button onclick="goTo('readroom')">열람실</button>
+    <button onclick="goTo('bookshelf')">책장</button><br>
     <button class="nav-button" onclick="goTo('3rdfloor')">나가기</button>
     </div>   
 
-      <!-- 자유연구실 --> 
+    <!-- 열람실 --> 
+    <div id="readroom" class="hidden">
+    <p><span style="font-weight: bold;">[도서관]/[열람실]</span><br><br>앉아 있기 좋은 안락의자와 독서대 등을 갖춘 열람실.<br>여기라면 바깥의 방해를 받지 않고 얼마든지 독서에 빠져 있을 수 있다.<br>그런데 열람실 벽에 붙어 있는 <span style="color: #3f40d3;">포스터</span>가 신경쓰인다. 이건 뭐지?</p>
+    <button onclick="goTo('poster')">포스터</button><br>
+    <button class="nav-button" onclick="goTo('library')">나가기</button>
+    </div>   
+
+    <!-- 열람실 --> 
+    <div id="poster" class="hidden">
+    <p><span style="font-weight: bold;">[도서관]/[열람실]</span><br><br>《미래기관 내 대출 인기 도서 순위》<br><br>1위. 『초세계급이 재능을 숨김』<br>2위. 『환생했더니 기록체가 되었습니다만?!』<br>3위. 『나 혼자 1지부 1짱』<br><br>이 책들이 정말 대출 순위권 안이라고...?</p>
+    <button class="nav-button" onclick="goTo('library')">나가기</button>
+    </div>   
+
+    <!-- 책장 --> 
+    <div id="bookshelf" class="hidden">
+    <p><span style="font-weight: bold;">[도서관]/[책장]</span><br><br>다양한 언어의 책이 꽂혀 있는 책장.<br>쉽게 읽을 수 있는 책들도 있고, 전공자가 아니면 이해할 수 없는 수준의 전문서적도 있다.<br>평생 책만 읽어도 다 읽어치울 수 없을 것 같은 양이다.<br>서가별로 추천도서도 모아 둔 모양인데, 한번 책을 골라 볼까?</p>
+    <button onclick="goTo('bookshelf1')">문학 서가의 추천도서</button><br>
+    <button onclick="goTo('bookshelf2')">자연과학 서가의 추천도서</button><br>
+    <button onclick="goTo('bookshelf3')">사회과학 서가의 추천도서</button><br>
+    <button class="nav-button" onclick="goTo('library')">나가기</button>
+    </div>   
+
+    <!-- 책장 --> 
+    <div id="bookshelf1" class="hidden">
+    <p><span style="font-weight: bold;">[도서관]/[책장]</span><br><br>문학 서가의 추천도서는...<br>붉은 머리의 체스마스터가 각 분야의 천재들을 한 명씩 쓰러뜨리는 내용의 소설이다.<br>세상의 모든 분야를 섭렵하고 만 체스마스터는 왕좌에 올라앉아 도전자를 기다리고 있다고 한다.<br>모든 내용은 허구이며 실제 인물을 바탕으로 하고 있지 않다고 적혀 있다.</p>
+    <button class="nav-button" onclick="goTo('library')">나가기</button>
+    </div>   
+
+    <!-- 책장 --> 
+    <div id="bookshelf2" class="hidden">
+    <p><span style="font-weight: bold;">[도서관]/[책장]</span><br><br>자연과학 서가의 추천도서는...<br>화산학자들에 대한 이야기이다.<br>화산학자들은 성격이 화산 같다는 이야기가 있다고 쓰여 있다.</p>
+    <button class="nav-button" onclick="goTo('library')">나가기</button>
+    </div>   
+
+    <!-- 책장 --> 
+    <div id="bookshelf3" class="hidden">
+    <p><span style="font-weight: bold;">[도서관]/[책장]</span><br><br>사회과학 서가의 추천도서는...<br>'친구 100명 사귀는 100가지 방법'이라는 띠지를 두른 자기계발서이다.<br>100명의 친구를 사귀려면 한 사람 한 사람에 맞는 100가지 방법이 필요하다는 무난한 내용의 책이다.</p>
+    <button class="nav-button" onclick="goTo('library')">나가기</button>
+    </div>   
+ 
+
+    <!-- 자유연구실 --> 
     <div id="lab" class="hidden">
     <p><span style="font-weight: bold;">[자유연구실]</span><br><br></p>
     <button class="nav-button" onclick="goTo('3rdfloor')">나가기</button>
@@ -1082,11 +1124,11 @@ function goTo(page) {
   clearOutputs();
   pageHistory.push(page);
   //[중요]특정 페이지 진입 시 스탯(코인 등)변동
-  if (['onstage3'].includes(page)) {
+  if (['onstage3','recording4','recording5'].includes(page)) {
     currentUser.coin = (currentUser.coin || 0) + 1;
     updateCoinDisplay();
   }
-  if (['onstage2','pond-money','pond-nota2'].includes(page)) {
+  if (['onstage2'].includes(page)) {
     currentUser.coin = (currentUser.coin || 0) + 2;
     updateCoinDisplay();
   }
@@ -1106,8 +1148,12 @@ function goTo(page) {
     currentUser.acc = "다람쥐 머리띠";
     updateCoinDisplay();
   }
-    if (['pond-nota2'].includes(page)) {
-    currentUser.notalove = true;
+    if (['recording2'].includes(page)) {
+    currentUser.music = "발라드를";
+    updateCoinDisplay();
+  }
+      if (['recording3'].includes(page)) {
+    currentUser.music = "댄스곡을";
     updateCoinDisplay();
   }
       if (['pond-friend'].includes(page)) {
@@ -1280,7 +1326,7 @@ function onstage(buttonId) {
 //★★★★★퀴즈★★★★★
 function checkSecretCode() {
   const input = document.getElementById('secret-code-input').value;
-  if (input === "19850609") { // 원하는 정답
+  if (input === "초세계급이 재능을 숨김") { // 원하는 정답
     const codebox = document.getElementById('codebox');
     if (codebox) {
       codebox.style.display = 'none';
