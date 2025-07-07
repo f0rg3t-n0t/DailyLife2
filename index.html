@@ -628,9 +628,16 @@
 <!-- 작업실 --> 
 <div id="atlier" class="hidden">
 <p><span style="font-weight: bold;">[미술실]/[작업실]</span><br><br>각종 화구와 질 좋은 종이가 준비된 작업실.<br>그림을 그리는 것은 물론이고, 조소나 도예까지 할 수 있도록 다양한 장비가 배치되어 있다.<br>평소 예술과 연이 없었던 사람이더라도 이곳에서는 새 취미를 찾을 수 있을지도...</p>
-<button class="nav-button" onclick="goTo('art')">나가기</button>
+<button id="gry" onclick="goTodel('atlier1', 'gry')">그림을 그린다</button><br>
+  <button class="nav-button" onclick="goTo('art')">나가기</button>
 </div>
 
+  <!-- 작업실1 --> 
+<div id="atlier1" class="hidden">
+<p><span style="font-weight: bold;">[미술실]/[작업실]</span><br><br>예술혼을 불태우기 위한 작업을 시작했다.<br><br>허공에서 목소리가 들린다...<br><em>"멋진 작품이군요. 전시실에 특별 전시 공간을 만들어 전시해보도록 하겠습니다."</em><br><br>초세계급 화가의 그림 옆에　이 그림이...?</p>
+ <button onclick="goTo('atlier1')">그림을 그린다</button>
+  <button class="nav-button" onclick="goTo('art')">나가기</button>
+</div>
 
 <!-- 전시실 --> 
 <div id="museum" class="hidden">
@@ -667,14 +674,47 @@
 
     <!-- 공연장 --> 
     <div id="stage" class="hidden">
-    <p><span style="font-weight: bold;">[공연장]</span><br><br>원형 극장의 형태를 빌려온 공연장.<br>중앙의 <span style="color: #3f40d3;">무대</span>와 <span style="color: #3f40d3;">조명 관리실</span>, <span style="color: #3f40d3;">분장실</span>까지 제법 그럴싸하다.</p>
+    <p><span style="font-weight: bold;">[공연장]</span><br><br>원형 극장의 형태를 빌려온 공연장.<br>중앙의 <span style="color: #3f40d3;">무대</span>와 <span style="color: #3f40d3;">조명 관리실</span>, <span style="color: #3f40d3;">분장실</span>까지 제법 그럴싸하다.<br>구석에 <span style="color: #3f40d3;">'인생한컷'</span>이라고 쓰인 부스가 있다.</p>
     <button onclick="goTo('mudae')">무대</button>
     <button onclick="goTo('light')">조명 관리실</button>
     <button onclick="goTo('makeup')">분장실</button><br>
+    <button onclick="goTo('onecut')">인생한컷</button><br>
     <button class="nav-button" onclick="goTo('3rdfloor')">나가기</button>
   </div>
 
+    <!-- 공연장 인생한컷 --> 
+    <div id="onecut" class="hidden">
+    <p><span style="font-weight: bold;">[공연장]/[인생한컷]</span><br><br>즉석 사진을 인화할 수 있는 부스인 모양이다.<br>그런데... 인생 한 컷이라니 너무 짧지 않아?</p>
+    <button id="isnc" onclick="goTodel('onecut1', 'isnc')">사진을 찍는다</button><br>
+    <button class="nav-button" onclick="goTo('stage')">나가기</button>
+  </div>
 
+      <!-- 공연장 인생한컷 --> 
+    <div id="onecut1" class="hidden">
+    <p><span style="font-weight: bold;">[공연장]/[인생한컷]</span><br><br>제대로 준비할 틈도 없이 사진 촬영이 시작된다!<br>잠깐... 포즈는?</p>
+    <button onclick="goTo('onecut2')">자신있게!</button><br>
+    <button onclick="goTo('onecut3')">사랑스럽게!</button><br>
+    <button onclick="goTo('onecut4')">무난하게!</button><br>
+  </div>
+
+        <!-- 공연장 인생한컷 --> 
+    <div id="onecut2" class="hidden">
+    <p><span style="font-weight: bold;">[공연장]/[인생한컷]</span><br><br>당당하고 멋진 포즈가...<br>국화 꽃다발과 영정 사진 프레임 안에 찍혀 나왔다.<br>뭐 이런 사진 부스가 다 있어?!</p>
+    <button class="nav-button" onclick="goTo('onecut')">나가기</button>
+  </div>
+
+          <!-- 공연장 인생한컷 --> 
+    <div id="onecut3" class="hidden">
+    <p><span style="font-weight: bold;">[공연장]/[인생한컷]</span><br><br>사랑스럽고 귀여운 포즈가...<br>국화 꽃다발과 영정 사진 프레임 안에 찍혀 나왔다.<br>뭐 이런 사진 부스가 다 있어?!</p>
+    <button class="nav-button" onclick="goTo('onecut')">나가기</button>
+  </div>
+
+          <!-- 공연장 인생한컷 --> 
+    <div id="onecut4" class="hidden">
+    <p><span style="font-weight: bold;">[공연장]/[인생한컷]</span><br><br>무난하고 밋밋한 포즈가...<br>국화 꽃다발과 영정 사진 프레임 안에 찍혀 나왔다.<br>뭐 이런 사진 부스가 다 있어?!</p>
+    <button class="nav-button" onclick="goTo('onecut')">나가기</button>
+  </div>
+  
     <!-- 공연장 --> 
     <div id="mudae" class="hidden">
     <p><span style="font-weight: bold;">[공연장]/[무대]</span><br><br>무대 위에 서자 다닥다닥 붙은 관객석이 눈에 들어온다.<br>지금은 아무도 앉아 있지 않지만, 이렇게 관객석에 둘러싸이는 것만으로도 조금 긴장이 될지도...<br>무대에 서고 나니, 중앙에 붙어 있는 <span style="color: #3f40d3;">작은 종이</span>가 보인다. 안내문인가?</p>
@@ -805,7 +845,6 @@
     <p><span style="font-weight: bold;">[도서관]/[책장]</span><br><br>사회과학 서가의 추천도서는...<br>'친구 100명 사귀는 100가지 방법'이라는 띠지를 두른 자기계발서이다.<br>100명의 친구를 사귀려면 한 사람 한 사람에 맞는 100가지 방법이 필요하다는 무난한 내용의 책이다.</p>
     <button class="nav-button" onclick="goTo('bookshelf')">나가기</button>
     </div>   
- 
 
     <!-- 자유연구실 --> 
     <div id="lab" class="hidden">
@@ -1163,6 +1202,10 @@ function goTo(page) {
     currentUser.cd = 1;
     updateCoinDisplay();
   }
+    if (['atlier1'].includes(page)) {
+    currentUser.art = 1;
+    updateCoinDisplay();
+  }
     if (['makeup3'].includes(page)) {
     currentUser.acc = "토끼 머리띠";
     updateCoinDisplay();
@@ -1181,6 +1224,18 @@ function goTo(page) {
   }
       if (['recording3'].includes(page)) {
     currentUser.music = "댄스곡을";
+    updateCoinDisplay();
+  }
+        if (['onecut2'].includes(page)) {
+    currentUser.photo = "당당한";
+    updateCoinDisplay();
+  }
+        if (['onecut3'].includes(page)) {
+    currentUser.photo = "사랑스러운";
+    updateCoinDisplay();
+  }
+        if (['onecut4'].includes(page)) {
+    currentUser.photo = "무난한";
     updateCoinDisplay();
   }
     if (page === 'starting-point') {
